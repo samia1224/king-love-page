@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Love Locked</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #d63384;
+    }
+    p {
+      font-size: 18px;
+      color: #444;
+    }
+    .heart {
+      font-size: 50px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart">❤️</div>
+  <h1>Samia & King</h1>
+  <p>এই ভালোবাসা কখনো হারাবে না।</p>
+  <p>তোমার জন্য এই পেজ, কিং আব্দুর রহমান।</p>
+  <p>- রাজকন্যা সামিয়া</p>
+</body>
+</html>
