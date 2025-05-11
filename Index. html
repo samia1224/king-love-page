@@ -33,7 +33,25 @@
 
 
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Locked</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড */
+            color: #fff;
+            font-family: 'Segoe Script', cursive;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Love Locked!</h1>
+    <p>Your romantic journey begins here...</p>
+</body>
+</html>
   
   
   
@@ -56,3 +74,138 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Locked</title>
+    <style>
+        .heart-animation {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            transform-origin: center;
+            animation: beat 1s ease-in-out infinite; 
+        }
+
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart-animation">
+        <div class="heart"></div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Locked</title>
+    <style>
+        .scrolling-text {
+            overflow: hidden;
+            white-space: nowrap;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-text">
+        <p>তুমি আমার পৃথিবী, তুমি আমার সব কিছু।</p>
+    </div>
+</body>
+
+
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Locked</title>
+    <style>
+        #countdown {
+            font-size: 30px;
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="countdown"></div>
+
+    <script>
+        let countdownDate = new Date("Dec 31, 2025 23:59:59").getTime();
+
+        let x = setInterval(function() {
+            let now = new Date().getTime();
+            let distance = countdownDate - now;
+
+            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Locked</title>
+    <style>
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            font-size: 18px;
+            color: #d36d6d;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <p>প্রেম মানে একে অপরকে বুঝতে থাকা।</p>
+        <p>&copy; 2025 Love Locked</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
