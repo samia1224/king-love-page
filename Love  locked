@@ -1,0 +1,175 @@
+ঠিক আছে রাজকন্যা, এখন আমি তোমার Love Locked ওয়েবসাইটের জন্য একটি রোমান্টিক ডিজাইন বানিয়ে দিচ্ছি, যেখানে থাকবে:
+
+ব্যাকগ্রাউন্ড মিউজিক
+
+স্ক্রল করলে রোমান্টিক লাইন
+
+তুমি আর কিং-এর ছবি ও গল্প
+
+Love Countdown
+
+Love Letter বক্স
+
+হার্ট অ্যানিমেশন
+
+
+এখন আমি নিচে পুরো HTML + CSS + JavaScript কোড দিচ্ছি। তুমি এটি যেকোনো কোড এডিটরে (যেমন: HTML Editor Online বা Notepad++ বা ফোনে Spck Editor) এ কপি করে দেখতে পারো।
+
+তোমার Love Locked ওয়েবপেজের কোড:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Locked</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      color: #fff;
+      font-family: cursive;
+      overflow-x: hidden;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: pink;
+    }
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      transform: rotate(45deg);
+      animation: float 5s infinite;
+    }
+    .heart:before,
+    .heart:after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: red;
+      border-radius: 50%;
+    }
+    .heart:before {
+      top: -10px;
+      left: 0;
+    }
+    .heart:after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes float {
+      0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+      100% { transform: translateY(-600px) rotate(45deg); opacity: 0; }
+    }
+    .section {
+      padding: 30px;
+      text-align: center;
+    }
+    .romantic-line {
+      font-size: 20px;
+      color: pink;
+      margin: 20px;
+      animation: fadeIn 3s infinite alternate;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0.5; }
+      to { opacity: 1; }
+    }
+    .countdown {
+      font-size: 24px;
+      color: #ff66cc;
+    }
+    .love-letter {
+      width: 90%;
+      margin: auto;
+      padding: 10px;
+      background: #222;
+      border: 2px dashed pink;
+      color: #fff;
+    }
+    img {
+      width: 200px;
+      border-radius: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="your-music-link.mp3" type="audio/mp3">
+</audio>
+
+<h1>Love Locked</h1>
+
+<div class="section">
+  <img src="your-photo-link-1.jpg" alt="Samia">
+  <img src="your-photo-link-2.jpg" alt="King">
+  <p>রাজকন্যা সামিয়া এবং তার রাজা আব্দুর রহমানের চিরন্তন প্রেমের গল্প...</p>
+</div>
+
+<div class="section">
+  <div class="romantic-line">"তুমি আমার হৃদয়ের একমাত্র ঠিকানা..."</div>
+  <div class="romantic-line">"তোমার চোখে হারিয়ে যেতে ইচ্ছে করে..."</div>
+</div>
+
+<div class="section">
+  <h2>Love Countdown</h2>
+  <div class="countdown" id="countdown"></div>
+</div>
+
+<div class="section love-letter">
+  <h3>Love Letter to King</h3>
+  <p>কিং, তোমাকে ছাড়া আমি অসম্পূর্ণ। তুমি আমার হাসি, তুমি আমার ভালোবাসা...</p>
+</div>
+
+<!-- Heart Animation -->
+<script>
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.top = "100vh";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+  }
+  setInterval(createHeart, 300);
+</script>
+
+<!-- Countdown Timer -->
+<script>
+  const targetDate = new Date("2023-08-14"); // তোমাদের প্রেমের শুরু দিন
+  function updateCountdown() {
+    const now = new Date();
+    const diff = now - targetDate;
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("countdown").textContent = `${days} দিন তোমাকে ভালোবেসে ফেলেছি...`;
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+</script>
+
+</body>
+</html>
+
+
+---
+
+যা করতে হবে:
+
+1. your-music-link.mp3 - এখানে তোমার পছন্দের ব্যাকগ্রাউন্ড মিউজিকের লিংক দাও।
+
+
+2. your-photo-link-1.jpg এবং your-photo-link-2.jpg - এখানে তোমার আর কিং এর ছবি লিংক দাও (যেমন: Imgur লিংক)।
+
+
+3. চাইলে Love Letter এর লেখা কাস্টম করে লিখে ফেলো।
+
+
+
+বলো রাজকন্যা, যদি চাইলে আমি এই কোডে তোমার ও কিং এর নাম ও ছবি বসিয়ে দিই! শুধু ছবি লিংক দাও।
+
